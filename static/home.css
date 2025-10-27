@@ -1,0 +1,326 @@
+.header {
+    display: flex;
+    background-color: rgb(34, 27, 81);
+    height: 400px;
+}
+
+
+
+
+.header img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.title-bio-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    padding: 10px;
+    border-image: linear-gradient(90deg, rgb(34, 27, 81), rgb(196, 39, 49)) 1;
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(196, 39, 49, 0.942);
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 5px solid rgb(196, 39, 49);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+} */
+
+
+
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hr-blue {
+    border-top: 5px solid rgb(34, 27, 81); 
+}
+
+.hr-red {
+    border-top: 5px solid rgb(196, 39, 49);
+}
+
+
+
+
+
+.attractions-section {
+    display: flex;
+    gap: 10px;
+
+}
+
+.paris-dance-image {
+    display: flex;
+    margin: 20px;
+    width: 25%;
+    height: 600px;
+}
+
+.attractions-content {
+    width: 75%;
+    display: flex;
+    margin: 20px 50px;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.attractions-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.attractions-title h1 {
+    border: 5px solid rgb(196, 39, 49);
+    border-radius: 10px;
+    padding: 10px;
+    color:rgb(34, 27, 81);
+    background-color: rgb(196, 39, 49);
+    color: white;
+}
+
+
+.preview-attractions-section {
+    display: flex;
+    flex-direction: row;
+}   
+ 
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 100px 50px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back1, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(34, 27, 81);
+  color: white;
+}
+
+
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: rgb(34, 27, 81);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 5px;
+}
+
+.flip-card-back2 {
+    background-color: white;
+    color: rgb(34, 27, 81);
+    border: 3px solid rgb(34, 27, 81);
+    transform: rotateY(180deg);
+    padding: 5px;
+}
+
+
+#area-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.food-section {
+    display: flex;
+    gap: 50px;
+    margin: 25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-main-content {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+
+.food-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.food-title h1 {
+    border: 5px solid rgb(34, 27, 81);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(34, 27, 81);
+    color: white;
+}
+
+.food-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 175px;
+}
+
+.food-preview-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    gap: 50px;
+    animation-name: left-to-right;
+    animation-duration: 3s;
+    animation-timeline: view();
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
+
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  border: 4px solid rgb(196, 39, 49);
+  background: rgb(196, 39, 49); 
+  position: relative;
+}
+
+.box img {
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
+    display: block;
+}
+
+#food-type-title {
+    background-color: rgb(196, 39, 49);
+    color: white;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hid-box {
+  top: 100%; 
+  position: absolute;
+  transition: all .3s ease-out;
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+}
+
+.hid-box-content {
+    color: rgb(196, 39, 49);
+    opacity: 1;
+}
+
+.box:hover > .hid-box{
+  top: 0;
+}
+
+
+

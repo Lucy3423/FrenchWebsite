@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+        <title> Home </title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="title-bio-section">
+                <h1 class="title"> A Beginner's Guide To France </h1>
+            </div>
+            <img src="/static/images/eiffelTower.png">
+        </div>
+
+        <div class="marquee">
+            <div class="marquee__content">
+                <h1> Eiffel Tower </h1>
+                <h1> Notre Dame </h1>
+                <h1> Louvre Museum </h1>
+                <h1> Arc de Triomphe </h1>
+                <h1> Les pyrénées </h1>
+                <h1> Nice </h1>
+                <h1> Normandy </h1>
+            </div>
+            <div class="marquee__content" aria-hidden="true">
+                <h1> Eiffel Tower </h1>
+                <h1> Notre Dame </h1>
+                <h1> Louvre Museum </h1>
+                <h1> Arc de Triomphe </h1>
+                <h1> Les pyrénées </h1>
+                <h1> Nice </h1>
+                <h1> Normandy </h1>
+            </div>
+        </div>
+
+        <hr class="hr-blue">
+
+        <div class="attractions-section">
+            <img src="/static/images/notreDame.png" class="paris-dance-image">
+            <div class="attractions-content">
+                <div class="attractions-title">
+                    <h1> Attractions </h1>
+                </div>
+                <div class="preview-attractions-section">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://i.pinimg.com/736x/29/50/b7/2950b74256dfea55112bee94ea4cb25a.jpg" style="width:350px;height:350px">
+                            </div>
+                            <div class="flip-card-back1">
+                                <h1> The North of France </h1>
+                                <h3> <b>Top Cities: </b>Normandy, Paris, Lille, Callais</h3>
+                            </div>
+                        </div>
+                        <h1 id="area-title"> The North of France </h1>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://i.pinimg.com/736x/d6/bd/95/d6bd9554ce970e36bc425a102959dd83.jpg" style="width:350px;height:350px">
+                            </div>
+                            <div class="flip-card-back2">
+                                <h1> The South of France </h1>
+                                <h3> <b>Top Cities: </b> Nice, Marseille, Toulouse, Bordeaux </h3>
+                            </div>
+                        </div>
+                        <h1 id="area-title"> The South of France </h1>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://i.pinimg.com/736x/2e/05/78/2e0578974e242aade6836365a8de403b.jpg" style="width:350px;height:350px">
+                            </div>
+                            <div class="flip-card-back1">
+                                <h1> Mountainous Areas of France </h1>
+                                <h3> <b>Top Cities: </b> Les Pyrénées, Mount Blanc, Les Alpes, Les Alpes Suisses </h3>
+                            </div>
+                        </div>
+                        <h1 id="area-title"> Mountainous Areas of France </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr-red">
+
+        <div class="food-section">
+            <div class="food-main-content">
+                <div class="food-title">
+                    <h1> Food </h1>
+                </div>    
+
+                <div class="food-preview-section">
+                    <div class="box-container">
+                        <div class="box"> 
+                            <img src="https://i.pinimg.com/736x/b4/10/84/b410848c73f62d1b9a623cc8430ba8fc.jpg">
+                            <div class="hid-box">
+                                <div class="hid-box-content">
+                                    <h1> Hidden Content Here... </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 id="food-type-title"> ^ Puddings ^</h1>
+                    </div>
+
+                    <div class="box-container">
+                        <div class="box"> 
+                            <img src="https://i.pinimg.com/1200x/35/e4/eb/35e4eb9473ac4aec02e21ca9b481f8bf.jpg">
+                            <div class="hid-box">
+                                <div class="hid-box-content">
+                                    <h1> Hidden Content Here... </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 id="food-type-title">^ Les Boissons ^</h1>
+                    </div>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="https://i.pinimg.com/736x/cc/fc/16/ccfc16dbe208d08926d3f0d38c2f317f.jpg">
+                            <div class="hid-box">
+                                <div class="hid-box-content">
+                                    <h1> Hidden Content Here... </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 id="food-type-title"> ^ Savory Food ^</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-image">
+                <img src="/static/images/frenchCafe.png">
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>
