@@ -316,6 +316,10 @@
 .hid-box-content {
     color: rgb(196, 39, 49);
     opacity: 1;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    margin: 5px
 }
 
 .box:hover > .hid-box{
@@ -364,7 +368,8 @@
     display: flex;
     margin: 50px 75px;
     width: 25%;
-    height: 600px;
+    height: 700px;
+    margin-top: 250px;
 }
 
 .topic-container {
